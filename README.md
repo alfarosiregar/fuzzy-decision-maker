@@ -5,7 +5,7 @@ Production-ready Web Application Decision Support System (DSS) using **Streamlit
 ---
 
 ## 📌 Project Overview
-- **Goal:** Replace an existing MATLAB simulation (which achieved a MAPE of 17.31%) with a highly interactive, real-time web application for daily operational use.
+- **Goal:** A highly interactive, real-time web application for daily operational use to optimize donut production using AI-based fuzzy logic.
 - **Core Algorithm:** Fuzzy Inference System (FIS) Mamdani.
 - **Input Variables:** 
   1. `Permintaan` (Demand - units of donuts)
@@ -21,7 +21,9 @@ The Streamlit dashboard has been heavily customized to provide a premium, modern
 - **Glassmorphism Login Page:** A custom login interface featuring glassmorphism effects, floating donut animations, and an aesthetic amber color palette.
 - **Theme-Locked Login Security:** The login page is strictly locked to **Light Mode** using advanced structural CSS injections, ensuring inputs and SVG icons (like the password toggle) render flawlessly regardless of the dashboard's active theme.
 - **Dynamic Cross-Theme Sync:** Uses intelligent JavaScript polling to continuously sync the background color of the top Navigation Header (`stHeader`) with the Sidebar (`stSidebar`), maintaining visual consistency across Light and Dark Mode toggles.
-- **Seamless Responsiveness:** Standardized CSS variables to support seamless transitions between Streamlit's native Light and Dark modes across all dashboard components.
+- **State Persistence Memory:** The application intelligently remembers your Daily Operational Inputs and History Dashboard filters (Year/Month) across page navigations without requiring form submissions, providing a seamless multi-page experience.
+- **Smooth Random Walk Data Generation:** Integrated a realistic data simulator that uses a bounded Random Walk algorithm to generate smooth historical production data (daily fluctuations < 1000 units), perfect for trend analysis.
+- **Targeted CSS Injection:** Employs advanced modern CSS (such as `:has()` and adjacent sibling selectors) to style specific Streamlit widgets (like the Amber *Hitung* button) without bleeding styles to other components.
 
 ---
 
